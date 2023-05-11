@@ -1,24 +1,33 @@
-<%@ page language="java" contentType="text/html; charset=utf-8"
-    pageEncoding="utf-8"%>
-<!DOCTYPE html>
+register.jsp
 <html>
 <head>
-<meta charset="utf-8">
-<title>Bookshop Website</title>
+<title>Registration Form</title>
 </head>
 <body>
-    <div style="text-align: center">
-        <h1>Admin Login</h1>
-        <form action="login" method="post">
-            <label for="email">Email:</label>
-            <input name="email" size="30" />
-            <br><br>
-            <label for="password">Password:</label>
-            <input type="password" name="password" size="30" />
-            <br>${message}
-            <br><br>           
-            <button type="submit">Login</button>
-        </form>
-    </div>
+<h1>User Register Form</h1>
+<form action="user_register" method="post">
+                         	<table style="with: 20%">
+                                  	<tr>
+                                            	<td>First Name</td>
+                                            	<td><input type="text" name="first_name" /></td>
+                                  	</tr>
+                                  	<tr>
+                                            	<td>Last Name</td>
+                                            	<td><input type="text" name="last_name" /></td>
+                                  	</tr>
+                                  	<tr>
+                                            	<td>UserName</td>
+                                            	<td><input type="text" name="username" /></td>
+                                  	</tr>
+                                            	<tr>
+                                            	<td>Password</td>
+                                            	<td><input type="password" name="password" /></td>
+                                  	</tr>
+                                  	<tr>
+                                            	<td>Address</td>
+                                            	<td><input type="text" name="address" /></td>
+                                  	</tr>
+                         	</table>
+                         	<input type="submit" value="Submit" /></form>
 </body>
 </html>
